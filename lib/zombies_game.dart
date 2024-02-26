@@ -1,15 +1,17 @@
 import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flame/game.dart';
-import 'package:zombies/components/components.dart';
-import 'package:zombies/gen/assets.gen.dart';
+
+import 'components/world.dart';
+import 'gen/assets.gen.dart';
 
 class ZombieGame extends FlameGame with HasKeyboardHandlerComponents {
-  final ZombieWorld _world;
+  @override
+  final ZombieWorld world;
   late final CameraComponent cameraComponent;
 
-  ZombieGame() : _world = ZombieWorld() {
-    cameraComponent = CameraComponent(world: _world);
+  ZombieGame() : world = ZombieWorld() {
+    cameraComponent = CameraComponent(world: world);
     images.prefix = '';
   }
 
@@ -23,9 +25,6 @@ class ZombieGame extends FlameGame with HasKeyboardHandlerComponents {
     ]);
 
     add(cameraComponent);
-    add(_world);
-
-    cameraComponent.viewfinder.anchor = Anchor.center;
-    cameraComponent.follow(_world.player);
+    add(world);
   }
 }

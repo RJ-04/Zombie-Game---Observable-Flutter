@@ -31,6 +31,7 @@ dependencies:
   build_runner: ^2.4.8
   cupertino_icons: ^1.0.2
   flame: ^1.16.0
+  flame_tiled: ^1.19.0
   flutter:
     sdk: flutter
   flutter_gen: ^5.4.0
@@ -55,6 +56,7 @@ flutter:
     - assets/character/Zombies/Poses/
     - assets/dungeon/
     - assets/town/
+    - assets/tiles/world.tmx
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see

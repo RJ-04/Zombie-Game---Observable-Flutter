@@ -1,4 +1,4 @@
-# zombies
+# Zombies
 
 A new Flutter project.
 

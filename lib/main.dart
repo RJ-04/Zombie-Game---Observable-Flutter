@@ -1,6 +1,6 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:zombies/zombies_game.dart';
+import 'zombies_game.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
